@@ -1,3 +1,11 @@
 npm install --save @ckeditor/ckeditor5-build-classic
 
 npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+
+
+git clone -b stable https://github.com/ckeditor/ckeditor5-build-classic.git
+cd ckeditor5-build-classic
+npm install
+npm install --save-dev @ckeditor/ckeditor5-alignment
+add .....
+yarn run build
