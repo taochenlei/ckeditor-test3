@@ -9,3 +9,6 @@ npm install
 npm install --save-dev @ckeditor/ckeditor5-alignment
 add .....
 yarn run build
+
+
+npm install --save @ckeditor/ckeditor5-word-count

@@ -17,7 +17,13 @@ class App extends Component {
                                 { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' }
                             ]
                         },
-                        placeholder: "Enter your response here"
+                        placeholder: "Enter your response here",
+                        wordCount: {
+                            onUpdate: stats => {
+                                // Prints the current content statistics.
+                                console.log( `Characters: ${ stats.characters }\nWords: ${ stats.words }` );
+                            }
+                        }
                     }}
 
                     // data="<p>Hello from CKEditor 5!</p>"
