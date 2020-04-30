@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import * as ClassicEditor from 'ckeditor5-build-classic-all-plugin';
+// import ClassicEditor from 'ckeditor5-build-classic-complete';
 
 class App extends Component {
     render() {
@@ -10,7 +12,7 @@ class App extends Component {
                 <CKEditor
                     editor={ ClassicEditor }
                     config={{
-                        toolbar: [ 'heading', '|', 'alignment', '|', 'italic', 'bold', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ],
+                        toolbar: [ 'heading', 'alignment', '|', 'italic', '|', 'underline', 'bold', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ],
                         heading: {
                             options: [
                                 { model: 'heading2', view: 'h2', title: 'Heading', class: 'ck-heading_heading2' },
