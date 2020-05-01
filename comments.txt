@@ -14,14 +14,14 @@ yarn run build
 npm install --save @ckeditor/ckeditor5-word-count
 
 
-=============can try later=====================
-npm i ckeditor5-build-classic-all-plugin --save
-npm install --save @ckeditor/ckeditor5-react
-
-import * as ClassicEditor from 'ckeditor5-build-classic-all-plugin';
 
 
-
+================================================================
 rm -rf node_modules && npm install
 
 npm install --save @ckeditor/ckeditor5-editor-classic
+
+
+npm install --save @ckeditor/ckeditor5-react
+npm i @jesse541/ckeditor5-build-classic
+

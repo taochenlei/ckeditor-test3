@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import CKEditor from '@ckeditor/ckeditor5-react';
-// import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-// import * as ClassicEditor from 'ckeditor5-build-classic-all-plugin';
-// import ClassicEditor from 'ckeditor5-build-classic-complete';
+import * as ClassicEditor from '@jesse541/ckeditor5-build-classic';
+
 
 class App extends Component {
     render() {
@@ -12,7 +11,7 @@ class App extends Component {
                 <CKEditor
                     editor={ ClassicEditor }
                     config={{
-                        toolbar: [ 'heading', 'alignment', '|', 'italic', '|', 'underline', 'bold', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ],
+                        toolbar: [ 'heading', 'alignment', '|', 'italic', 'underline', 'bold', '|', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ],
                         heading: {
                             options: [
                                 { model: 'heading2', view: 'h2', title: 'Heading', class: 'ck-heading_heading2' },
@@ -23,7 +22,7 @@ class App extends Component {
                         wordCount: {
                             onUpdate: stats => {
                                 // Prints the current content statistics.
-                                console.log( `Characters: ${ stats.characters }\nWords: ${ stats.words }` );
+                                console.log( `Characters are: ${ stats.characters }\nWords: ${ stats.words }` );
                             }
                         }
                     }}
